@@ -65,7 +65,14 @@
         .attr('src', 'img/logo-dp6-square.png')
         .attr('alt', 'Logo DP6');
       lb.find('.lightbox-title').text('Contato enviado');
-      ga('send', 'event', 'contato', 'enviado', 'enviado');
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-12345-6', 'auto');
+      ga('send', 'event', 'contato1', 'enviado1', 'enviado1');
       lbContent.html('Obrigado pelo seu contato!').scrollTop(0);
       setTimeout(function () {
         body.addClass('lightbox-open');
