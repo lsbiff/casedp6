@@ -19,7 +19,6 @@ as funções abaixo são simplesmente para fazer a validação desses campos (te
 function validateName() {
 
   var inputName = document.getElementById('nome').value;
-  //alert('Nome = ' + inputName);
   
   if(inputName != '') {
     ga('send', 'event', 'contato', 'nome', 'preencheu');
@@ -30,7 +29,6 @@ function validateName() {
 function validateEmail() {
 
   var inputEmail = document.getElementById('email').value;
-  //alert('Email = ' + inputEmail);
 
   if(inputEmail != '') {
     ga('send', 'event', 'contato', 'email', 'preencheu');
@@ -41,7 +39,6 @@ function validateEmail() {
 function validateTelefone() {
 
   var inputTelefone = document.getElementById('telefone').value;
-  //alert('Tel = ' + inputTelefone);
 
   if(inputTelefone != '') {
     ga('send', 'event', 'contato', 'telefone', 'preencheu');
