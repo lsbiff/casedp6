@@ -68,7 +68,8 @@
       lb.find('.lightbox-title').text('Contato enviado');
 
       ga('create', 'UA-12345-6', 'auto');
-      ga('send', 'event', 'contato1', 'enviado1', 'enviado1');
+      ga('send', 'event', 'contato', 'enviado', 'enviado');
+      
 
       lbContent.html('Obrigado pelo seu contato!').scrollTop(0);
       setTimeout(function () {
